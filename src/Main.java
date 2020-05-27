@@ -39,7 +39,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 		t = new Timer(17, this);
 		t.start();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.setVisible(true);
+		f.setVisible(true); //hi
 	}	
 	Timer t;
 	
