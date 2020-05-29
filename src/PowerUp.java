@@ -4,7 +4,7 @@ public class PowerUp {
 	private int duration;
 
 	public PowerUp() {
-		//d
+		//clears the arraylist of enemies
 	}
 	
 	public void ScreenWipe() {
