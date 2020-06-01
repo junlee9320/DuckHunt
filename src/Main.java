@@ -19,7 +19,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
     int mouseX, mouseY; //x and y positions of the mouse
     
     int points = 0;
-	int fireradius = 200;
+	int fireradius = 50;
 	int timercount;
 	int temptimer;
 	int duration;
@@ -41,7 +41,8 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 		}
 		g.drawString(("Temptimer: ") + Integer.toString(temptimer), 1010, 100);
 		
-		g.drawOval(700, 300, fireradius, fireradius);
+		g.drawOval(mouseX-(fireradius/2), mouseY-(fireradius-(fireradius/4)), fireradius, fireradius);
+		//needs editing
 		
 		g.drawString(info, 1010, 150);
     }
@@ -74,7 +75,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 			if(temptimer>=duration) {
 				incrad = false;
 				temptimer=0;
-				fireradius = 200;
+				fireradius = 50;
 				info = "i am info-chan";
 			}
 		}
@@ -117,7 +118,6 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
     
     @Override    
     public void mouseDragged(MouseEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
@@ -145,25 +145,21 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
@@ -183,13 +179,11 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 
     @Override
     public void keyReleased(KeyEvent e) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void keyTyped(KeyEvent e) {
-        // TODO Auto-generated method stub
         
     }
     
