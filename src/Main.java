@@ -174,6 +174,11 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseLi
 			info = "increased radius powerup activated";
 			IncRadius();
 		}
+		
+		if(e.getKeyCode() == 89) {
+			info = "screenwiped";
+			ClearScreen();
+		}
         
     }
 
